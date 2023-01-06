@@ -440,7 +440,6 @@ border-radius: 0px 0px 4px 4px; */
 
 .footer-container {
   display: flex;
-  gap: 120px;
 }
 
 .footer-block {
@@ -456,7 +455,7 @@ border-radius: 0px 0px 4px 4px; */
 }
 
 .social-media-footer {
-  /* padding-left: 120px; */
+  margin-left: 120px;
 }
 .social-media-list {
   display: flex;
@@ -494,6 +493,10 @@ border-radius: 0px 0px 4px 4px; */
   display: flex;
 }
 
+.subscribe-container {
+  margin-left: 80px;
+}
+
 .footer-email {
   min-width: 264px;
   min-height: 40px;
@@ -525,6 +528,17 @@ input[type="email"]::placeholder {
   padding-left: 24px;
   display: flex;
   justify-content: center;
+  cursor: pointer;
+}
+
+.subscribe-button:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 4px;
+  background-color: var(--pressed-state);
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-text {
@@ -803,14 +817,24 @@ textarea {
 .form-button {
   position: relative;
 
-  margin: 24px 119px 24px 95px;
-  width: 50%;
+  margin: 24px auto 0;
+  width: 170px;
   padding: 16px 32px;
   background-color: var(--primarybrand);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
   cursor: pointer;
+}
+
+.form-button:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 4px;
+  background-color: var(--pressed-state);
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .send {
@@ -832,7 +856,6 @@ textarea {
 
 .form-wrapper {
   position: relative;
-  display: block;
 }
 
 .svg-form {
